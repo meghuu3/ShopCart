@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+}
+
+body {
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #636fa4;
+}
+
+.container {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form {
+  padding: 30px;
+}
+
+.title {
+  position: relative;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.input-field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.input-field input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0 35px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+}
+
+.input-field i,
+ion-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+}
+
+.input-field button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: cadetblue;
+}
+.btsignup {
+  margin-bottom: 40px;
+}
+
+.input-field input:is(:focus, :valid) {
+  border-bottom-color: cadetblue;
+}
